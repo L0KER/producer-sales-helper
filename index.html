@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Producer Sales Helper</title>
+  <meta name="description" content="CRM, сделки, аналитика и напоминания в Telegram для битмейкера. Работает без сервера.">
+  <meta name="theme-color" content="#07080c">
+  <meta name="color-scheme" content="dark light">
+  <!-- Telegram Mini App bridge; harmless in a normal browser. -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/icons/icon.svg">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <aside class="sidebar" id="sidebar" aria-label="Основная навигация"></aside>
+    <div class="main">
+      <header class="topbar" id="topbar"></header>
+      <main class="view" id="view" tabindex="-1">
+        <div class="boot">
+          <div class="boot-logo"></div>
+          <p>Загружаю студию…</p>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+  <div id="modal-root"></div>
+  <div id="toast-root" class="toast-root" aria-live="polite"></div>
+
+  <noscript>
+    <div class="noscript">Для работы приложения нужен JavaScript.</div>
+  </noscript>
+
+  <script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>

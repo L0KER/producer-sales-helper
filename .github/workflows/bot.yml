@@ -1,0 +1,36 @@
+name: Telegram bot & reminders
+
+on:
+  schedule:
+    # GitHub may delay scheduled runs by a few minutes; that is fine here.
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: telegram-bot
+  cancel-in-progress: false
+
+jobs:
+  bot:
+    name: Reminders and commands
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run bot
+        env:
+          GIST_ID: ${{ secrets.GIST_ID }}
+          GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          APP_URL: ${{ vars.APP_URL || secrets.APP_URL }}
+        run: node scripts/bot.mjs

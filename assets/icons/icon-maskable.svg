@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Producer Sales Helper">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b6bff"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="#07080c"/>
+  <g fill="url(#g)">
+    <rect x="142" y="222" width="30" height="68" rx="15"/>
+    <rect x="190" y="188" width="30" height="136" rx="15"/>
+    <rect x="238" y="152" width="30" height="208" rx="15"/>
+    <rect x="286" y="180" width="30" height="152" rx="15"/>
+    <rect x="334" y="210" width="30" height="92" rx="15"/>
+  </g>
+</svg>

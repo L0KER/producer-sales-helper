@@ -1,0 +1,39 @@
+{
+  "name": "Producer Sales Helper",
+  "short_name": "Sales Helper",
+  "description": "CRM, сделки, аналитика и напоминания в Telegram для битмейкера.",
+  "lang": "ru",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#07080c",
+  "theme_color": "#07080c",
+  "icons": [
+    {
+      "src": "./assets/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Добавить сделку",
+      "url": "./index.html#/deals?new=1",
+      "icons": [{ "src": "./assets/icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+    },
+    {
+      "name": "Задачи на сегодня",
+      "url": "./index.html#/tasks",
+      "icons": [{ "src": "./assets/icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "producer-sales-helper",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Serverless CRM, deal pipeline, analytics and Telegram reminders for beatmakers.",
+  "scripts": {
+    "dev": "npx --yes serve . -l 5173",
+    "bot": "node scripts/bot.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test tests/unit.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
